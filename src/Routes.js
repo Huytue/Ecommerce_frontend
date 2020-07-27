@@ -18,12 +18,12 @@ import ManageProducts from './admin/ManageProducts';
 import UpdateProduct from './admin/UpdateProduct';
 import UpdateCategory from './admin/updateCategory';
 
-import Container from '@material-ui/core/Container';
+
 const Routes = () => {
     return (
       
         <BrowserRouter>
-          <Container>
+        
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/shop" exact component={Shop} />
@@ -42,7 +42,7 @@ const Routes = () => {
                 <AdminRoute path="/admin/category/update/:categoryId" exact component={UpdateCategory} />
              
             </Switch>
-            </Container>
+           
         </BrowserRouter>
        
         

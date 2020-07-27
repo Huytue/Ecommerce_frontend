@@ -33,7 +33,7 @@ const AddCategory = () => {
     };
 
     const newCategoryFom = () => (
-        <form onSubmit={clickSubmit}>
+        <form onSubmit={clickSubmit} className="mt-5">
             <div className="form-group">
                 <label className="text-muted">Name</label>
                 <input
@@ -74,6 +74,7 @@ const AddCategory = () => {
             title="Add a new category"
             description={`G'day ${user.name}, ready to add a new category?`}
         >
+
             <div className="row">
                 <div className="col-md-8 offset-md-2">
                     {showSuccess()}
@@ -82,6 +83,8 @@ const AddCategory = () => {
                     {goBack()}
                 </div>
             </div>
+
+
         </Layout>
     );
 };

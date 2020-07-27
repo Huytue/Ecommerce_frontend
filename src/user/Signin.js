@@ -8,7 +8,7 @@ import styled from "styled-components";
 const Signin = () => {
     const [values, setValues] = useState({
         email: "tue@gmail.com",
-        password: "r123456",
+        password: "12345679",
         error: "",
         loading: false,
         redirectToReferrer: false
@@ -40,7 +40,7 @@ const Signin = () => {
 
     const signUpForm = () => (
     <NavWrapper>
-        <div className="container">
+        <div className="container mt-5">
         <div className="d-flex justify-content-center h-100">
           <div className="card">
             <div className="card-header">

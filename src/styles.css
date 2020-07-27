@@ -37,15 +37,21 @@
     font-weight: bold;
 }
 
+
 /* black shade form 10-1 */
 .black-10 {
     background: #f2f2f2;
+    color:indianred;
+    border-radius: 30px;
 }
 .black-9 {
     background: #e6e6e6;
+    text-align: center;
+    border-radius: 30px;
 }
 .black-8 {
     background: #d9d9d9;
+    text-align: center;
 }
 .black-7 {
     background: #cccccc;
@@ -119,7 +125,8 @@
 
 
 .card-header {
-    text-align: center;;
+    text-align: center;
+ 
 }
 
 
@@ -142,4 +149,22 @@
 .banner-user-elem .banner-user-text{
     font-size: 22px;
   
+}
+
+.card-header-1 {
+    background-color: bisque;
+}
+
+.card-p {
+    text-align: center;
+    border-radius: 30px;
+}
+
+.badge-pill {
+
+    text-align: center;
+}
+.button-view{
+    align-items:center;
+    text-align: center;
 }

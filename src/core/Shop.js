@@ -5,6 +5,7 @@ import { getCategories, getFilteredProducts } from "./apiCore";
 import Checkbox from "./Checkbox";
 import RadioBox from "./RadioBox";
 import { prices } from "./fixedPrices";
+import Container from '@material-ui/core/Container';
 
 const Shop = () => {
     const [myFilters, setMyFilters] = useState({
@@ -101,6 +102,7 @@ const Shop = () => {
             description="Search and find product of your choice"
             className="container-fluid"
         >
+       <Container>
             <div className="row">
                 <div className="col-3">
                     <h4>Filter by categories</h4>
@@ -137,6 +139,7 @@ const Shop = () => {
                     {loadMoreButton()}
                 </div>
             </div>
+            </Container>
         </Layout>
     );
 };

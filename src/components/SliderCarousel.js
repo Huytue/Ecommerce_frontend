@@ -79,7 +79,7 @@ class Carousel3d extends React.PureComponent {
       return;
     }
     this.startX = e.pageX || e.touches[0].pageX;
-    this.startRotate = Math.round(this.state.rotate / this.angle) * this.angle; // 偏移修复;
+    this.startRotate = Math.round(this.state.rotate / this.angle) * this.angle; 
   }
 
   onTouchMove = (e) => {
@@ -87,7 +87,7 @@ class Carousel3d extends React.PureComponent {
       return;
     }
     const x = e.pageX || e.touches[0].pageX;
-    const differ = (x - this.startX) * this.props.moveRange; // 幅度加大；
+    const differ = (x - this.startX) * this.props.moveRange; 
     const rotate = this.startRotate + differ / this.w * this.angle;
     const r = (Math.abs(Math.ceil(this.state.rotate / 360)) * 360 - rotate) % 360;
     const current = Math.round(r / this.angle) % this.length;
@@ -251,14 +251,12 @@ class Carousel3d extends React.PureComponent {
 }
 
 const imgWrapper = [
-  'https://zos.alipayobjects.com/rmsportal/DGOtoWASeguMJgV.png',
-  'https://zos.alipayobjects.com/rmsportal/PDiTkHViQNVHddN.png',
-  'https://zos.alipayobjects.com/rmsportal/QJmGZYJBRLkxFSy.png',
-  'https://zos.alipayobjects.com/rmsportal/pTfNdthdsUpLPLJ.png',
-  'https://zos.alipayobjects.com/rmsportal/TDIbcrKdLWVeWJM.png',
-  'https://zos.alipayobjects.com/rmsportal/dvQuFtUoRmvWLsZ.png',
-   'https://zos.alipayobjects.com/rmsportal/QqWQKvgLSJaYbpr.png',
-  'https://zos.alipayobjects.com/rmsportal/vJcpMCTaSKSVWyH.png', 
+  'https://hoanghamobile.com/tin-tuc/wp-content/uploads/2019/10/danh-gia-galaxy-tab-s6.jpg',
+  'https://vuhoangtelecom.vn/wp-content/uploads/2019/05/hikvision-ds-2cv1021g0-idw1-1-600x600.jpg',
+  'https://cdn.tgdd.vn/Products/Images/44/215941/macbook-pro-16-201926-macbookprotouch16inch-1-600x600.jpg',
+  'https://mobiledailoan.vn/wp-content/uploads/2020/06/iphone-12-dai-loan-180x180.jpg',
+  'https://media.dautuvakinhdoanh.vn/2020/03/30/9882/1585537863-image003.jpg',
+  
 ];
 
 export default function Carousel() {

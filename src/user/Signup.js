@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom';
 import Layout from '../core/Layout';
 import { signup } from '../auth';
 
+import Input from '@material-ui/core/Input'
+import FormControl from '@material-ui/core/FormControl'
+import InputLabel from '@material-ui/core/InputLabel'
+import Button from '@material-ui/core/Button'
+import Paper from '@material-ui/core/Paper'
+import Grid from '@material-ui/core/Grid'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import Checkbox from '@material-ui/core/Checkbox'
+import Select from '@material-ui/core/Select'
+import MenuItem from '@material-ui/core/MenuItem'
+import FormHelperText from '@material-ui/core/FormHelperText'
+import Typography from '@material-ui/core/Typography'
+
 const Signup = () => {
     const [values, setValues] = useState({
         name: '',
@@ -38,25 +51,43 @@ const Signup = () => {
     };
 
     const signUpForm = () => (
-        <form>
-            <div className="form-group">
-                <label className="text-muted">Name</label>
-                <input onChange={handleChange('name')} type="text" className="form-control" value={name} />
-            </div>
-
-            <div className="form-group">
-                <label className="text-muted">Email</label>
-                <input onChange={handleChange('email')} type="email" className="form-control" value={email} />
-            </div>
-
-            <div className="form-group">
-                <label className="text-muted">Password</label>
-                <input onChange={handleChange('password')} type="password" className="form-control" value={password} />
-            </div>
-            <button onClick={clickSubmit} className="btn btn-primary">
-                Submit
-            </button>
-        </form>
+        
+        <div className = "mt-5">
+        <Grid container justify='center' alignContent='center'>
+                <Grid item xs={6} md={4}>
+                    <Paper elevation={4} style={{ padding: '20px 15px', marginTop: '100px' }}>
+                        <Typography variant="headline" gutterBottom>
+                            Signup
+                        </Typography>
+                        <FormControl fullWidth margin='normal'>
+                            <InputLabel>Username</InputLabel>
+                            <Input  onChange={handleChange('name')}  value={name}  name='username' fullWidth />
+                        </FormControl>
+                        <FormControl fullWidth margin='normal'>
+                            <InputLabel>Email</InputLabel>
+                            <Input  onChange={handleChange('email')} value={email}  name='email' fullWidth />
+                        </FormControl>
+                        <FormControl fullWidth margin='normal'>
+                            <InputLabel>Password</InputLabel>
+                            <Input  value={password}  onChange={handleChange('password')}  fullWidth name='password' type='password' />
+                        </FormControl>
+                        
+                        
+                        <FormControl fullWidth margin='normal'>
+                            <Button
+                                variant='extendedFab'
+                                color='primary'
+                                type='submit'
+                                onClick={clickSubmit}
+                            >
+                                OK
+                                </Button>
+                        </FormControl>
+                    </Paper>
+                </Grid>
+            </Grid>
+           
+        </div>
     );
 
     const showError = () => (
