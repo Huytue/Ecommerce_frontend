@@ -1,0 +1,50 @@
+{
+  "name": "ecommerce-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "antd": "^4.4.2",
+    "argon-design-system-free": "^1.2.0",
+    "braintree-web": "^3.62.2",
+    "braintree-web-drop-in-react": "^1.1.1",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "pm2": "^3.5.2",
+    "query-string": "^6.13.1",
+    "rc-banner-anim": "^2.4.4",
+    "rc-tween-one": "^2.7.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "react-intl": "^5.3.2",
+    "react-material-ui-carousel": "^1.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.0.1",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
